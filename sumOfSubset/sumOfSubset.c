@@ -16,7 +16,7 @@ void sumOfSubset (int i, int weight, int total){
     if (promising(i, weight, total)){
         if(weight == W){
             for(j = 0; j < i; j++)
-                printf("include :%s\n", include[j]);
+                printf("item %d include :%s\n", j, include[j]);
         } else {
             strcpy(include[i], "yes");
             sumOfSubset(i + 1, weight + w[i], total - w[i]);
